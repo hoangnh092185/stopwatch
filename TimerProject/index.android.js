@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { AppRegistry, TouchableHighlight, Text, View, StyleSheet } from 'react-native';
+import FormatTime from 'minutes-seconds-milliseconds';
 
 class TimerProject extends Component {
-  import FormatTime from 'minutes-seconds-milliseconds';
-
-class StopWatch extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -76,7 +74,7 @@ class StopWatch extends Component {
             {FormatTime(time)}
           </Text>
         </View>
-      ) 
+      )
     });
   }
 
