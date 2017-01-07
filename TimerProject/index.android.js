@@ -57,7 +57,7 @@ class TimerProject extends Component {
         onPress={this.handleLapPress.bind(this)}
         >
         <Text>
-          Lap
+          {this.state.running ? 'Lap' : 'Clear'}
         </Text>
       </TouchableHighlight>
     )
@@ -84,9 +84,7 @@ class TimerProject extends Component {
       this.setState({running: false});
       return;
     }
-
     this.setState({startTime: new Date()});
-
     this.interval = setInterval(() => {
       this.setState({
         timeElapsed: new Date() - this.state.startTime,
@@ -96,9 +94,12 @@ class TimerProject extends Component {
   }
 
   handleLapPress() {
+    if (!this.state.running) {
+      this.setState({laps: []});
+      return;
+    }
     let lap = this.state.timeElapsed;
     this.setState({
-      startTime: new Date(),
       laps: this.state.laps.concat([lap])
     });
   }
