@@ -6,11 +6,12 @@ Stop Watch written in React-Native on Android. The app is to measure time and al
 ## Lesson 
 This app was taken from **Build Apps with React Native** course from [NQT online education] [https://www.youtube.com/watch?v=NgTrff9bHIc&list=PLPEXdvrIYLsyFc1EVVr_YVtxU9icYfaWs]
 
-## Technologies
+Horaciosystem stopwatch repository was used as reference for react syntax [https://github.com/horaciosystem/stopwatch]
 
+## Technologies
+* Android Studio
 * React Native
 * ES2015
-
 
 ## Build
 Inside of the project root directory
