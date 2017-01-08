@@ -29,3 +29,6 @@ Inside of the project root directory
 # Keep this packager running while developing on any JS projects.
 npm start
 ```
+## License
+
+Released under the [MIT License](http://opensource.org/licenses/MIT).
